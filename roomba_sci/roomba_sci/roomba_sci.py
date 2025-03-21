@@ -17,7 +17,7 @@ class RoombaSCINode(Node):
         # Subscribers
         self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)
 
-        self.get_logger().info("Roomba ROS2 node started!")
+        self.get_logger().info("Roomba SCI node started!")
 
     def cmd_vel_callback(self, msg:Twist):
         """Handle velocity commands"""
